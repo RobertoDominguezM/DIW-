@@ -6,13 +6,19 @@
     </head>
     <body>
         <h1>Formulario</h1>
-        <form>
-            <p>Nombre:<input type="text" name="nombre"></p>
-            <p>Email:<input type="email" name="email"></p>
-            <p>Descripción:<textarea rows="10" cols="30"></textarea></p>
-            <p>Color preferido:<input type="color" name="color"></p>
-            <p>Nivel de Inglés:<input type="range" name="nivel" min="1" max="10"></p>
-            <p>Adjuntar curriculum:<input type="file" name="curriculum"></p>
+        <form action="https://webhook.site/6a7f48cb-f99f-4854-9916-2dbef27a019a" method="POST">
+            <label for="nom">Nombre</label>
+            <p><input type="text" name="nombre" id="nom"></p>
+            <label for="emails">Email</label>
+            <p><input type="email" name="email" id="emails"></p>
+            <label for="descrip">Descripción</label>
+            <p><textarea rows="10" cols="30"></textarea></p>
+            <label for="col">Color preferido</label>
+            <p><input type="color" name="color" id="col"></p>
+            <label for="niv">Nivel de Inglés</label>
+            <p><input type="range" name="nivel" min="1" max="10" id="niv"></p>
+            <label for="curri">Adjuntar curriculum</label>
+            <p><input type="file" name="curriculum" id="curri"></p>
             <p><input type="submit" value="Enviar"></p>
         </form>
     </body>
